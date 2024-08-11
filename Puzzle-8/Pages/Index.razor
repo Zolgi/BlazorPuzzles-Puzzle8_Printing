@@ -8,45 +8,47 @@
 
 -->
 
+<div class="d-print-none"> @* BuildInclasse *@
+    <PageTitle>Silly Story Generator</PageTitle>
 
-<PageTitle>Silly Story Generator</PageTitle>
+    <label>Adjective:</label>
+    <input disabled="@disabled" @bind="Adj1" />
+    <br />
+    <br />
 
-<label>Adjective:</label>
-<input disabled="@disabled" @bind="Adj1" />
-<br />
-<br />
+    <label>Noun:</label>
+    <input disabled="@disabled" @bind="Noun1" />
+    <br />
+    <br />
 
-<label>Noun:</label>
-<input disabled="@disabled" @bind="Noun1" />
-<br />
-<br />
+    <label>Adjective:</label>
+    <input disabled="@disabled" @bind="Adj2" />
+    <br />
+    <br />
 
-<label>Adjective:</label>
-<input disabled="@disabled" @bind="Adj2" />
-<br />
-<br />
+    <label>Noun:</label>
+    <input disabled="@disabled" @bind="Noun2" />
+    <br />
+    <br />
 
-<label>Noun:</label>
-<input disabled="@disabled" @bind="Noun2" />
-<br />
-<br />
+    <label>Plural Noun:</label>
+    <input disabled="@disabled" @bind="PlNoun1" />
+    <br />
+    <br />
 
-<label>Plural Noun:</label>
-<input disabled="@disabled" @bind="PlNoun1" />
-<br />
-<br />
+    <label>Noun:</label>
+    <input disabled="@disabled" @bind="Noun3" />
+    <br />
+    <br />
 
-<label>Noun:</label>
-<input disabled="@disabled" @bind="Noun3" />
-<br />
-<br />
-
-<button disabled="@disabled" @onclick="GenerateStory">Generate</button>
-<br />
-<br />
-
-<h1>@Title</h1>
-<p>@Story</p>
+    <button disabled="@disabled" @onclick="GenerateStory">Generate</button>
+    <br />
+    <br />
+</div>
+<div class="nocontent"> @* Eigene CssClasse *@
+    <h1>@Title</h1>
+</div>
+    <p>@Story</p>
 
 @code {
 
@@ -54,7 +56,7 @@
     string Title { get; set; } = string.Empty;
     string Story { get; set; } = string.Empty;
     string Noun1 { get; set; } = string.Empty;
-    string Adj1 { get; set; } = string.Empty; 
+    string Adj1 { get; set; } = string.Empty;
     string Noun2 { get; set; } = string.Empty;
     string Adj2 { get; set; } = string.Empty;
     string PlNoun1 { get; set; } = string.Empty;

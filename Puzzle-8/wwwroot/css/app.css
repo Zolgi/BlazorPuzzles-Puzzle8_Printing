@@ -2,6 +2,29 @@
 
 html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: green;
+    color:red;
+}
+
+/*Nur für Print*/
+    @media print {
+        html , body {
+            background-color: green;
+            color: white;
+        }
+   
+     
+    .nocontent {
+        margin: 0;
+        padding: 0;
+        display: none;
+    }
+
+        p {
+            font-size: 24pt;
+            background-color: purple;
+            color: green;
+        }
 }
 
 h1:focus {
